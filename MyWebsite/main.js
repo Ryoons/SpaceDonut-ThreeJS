@@ -68,6 +68,7 @@ function addStar() {
 
 }
 
+// creating an array of 200 and filling it up with stars so we dont infinitely spawn them lol
 Array(200).fill().forEach(addStar)
 
 const spaceTexture = new THREE.TextureLoader().load('pictures/space2.jpg');
