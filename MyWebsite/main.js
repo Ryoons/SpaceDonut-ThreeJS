@@ -29,8 +29,7 @@ const donutMap = new THREE.TextureLoader().load('pictures/donutmap.jpg');
 // Creating the DONUT :)
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100)
 //const material = new THREE.MeshStandardMaterial( {color: 0xFF6347} );
-const material = new THREE.MeshStandardMaterial({map: donutTexture,
-                                                 normalMap: donutMap});
+const material = new THREE.MeshStandardMaterial({map: donutTexture, normalMap: donutMap});
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus)
